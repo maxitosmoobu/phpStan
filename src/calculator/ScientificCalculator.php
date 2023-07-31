@@ -8,4 +8,18 @@ class ScientificCalculator
     {
         return sin($number);
     }
+
+    public function unUsedFunction()
+    {
+    }
+
+    public function undefinedVariable()
+    {
+        $undefinedVariable;
+    }
+
+    public function unUsedVariable()
+    {
+        $test = 'maxito';
+    }
 }
