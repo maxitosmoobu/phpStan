@@ -40,4 +40,14 @@ class BasicCalculator
     {
         $test = 'maxito';
     }
+
+    public function onlyAnalyseThis()
+    {
+        $i = 0;
+        if ($i) {
+            return true;
+        }
+
+        return false;
+    }
 }
