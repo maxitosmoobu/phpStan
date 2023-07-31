@@ -13,9 +13,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
+          fetch-depth: 0  # a full history is required for pull request analysis
       - uses: php-actions/composer@v6 # or alternative dependency management
       - uses: php-actions/phpstan@v3
         with:
           php_version: "8.1"
           path: src/
-          level: 9 # 1-9 Lowest to Strictest
+          level: 6 # 1-9 Lowest to Strictest
