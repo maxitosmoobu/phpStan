@@ -18,3 +18,4 @@ jobs:
         with:
           php_version: "8.1"
           path: src/
+          level: 9 # 1-9 Lowest to Strictest
